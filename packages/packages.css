@@ -1,0 +1,72 @@
+main {
+  padding-top: 32px;
+}
+
+.package {
+  background: #5cd480;
+  border: 5px solid black;
+  border-left: none;
+  margin: 16px 0;
+  width: 80%;
+}
+
+.package:hover,
+.package:active {
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-color: #ff5454;
+}
+
+.package-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 32px;
+}
+
+.package-title {
+  font-weight: bold;
+  color: black;
+}
+
+.package-subtitle {
+  color: #979797;
+}
+
+.package-description {
+  background: white;
+  border: 1px solid #0e4f1f;
+  padding: 16px;
+  color: #0e4f1f;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#plus {
+  background: rgba(213, 255, 220, 0.95);
+}
+
+#free {
+  background: rgba(234, 252, 237, 0.95);
+  float: right;
+  border-right: none;
+  border-left: 5px solid black;
+}
+
+#free:active,
+#free:hover {
+  border-color: #ff5454;
+}
+
+#premium {
+  background: rgba(14, 79, 31, 0.95);
+}
+
+#premium .package-title {
+  color: white;
+}
+
+#premium .package-subtitle {
+  color: #bbb;
+}
