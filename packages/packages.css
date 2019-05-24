@@ -1,12 +1,12 @@
 main {
-  padding-top: 32px;
+  padding-top: 2rem;
 }
 
 .background {
   background: url("../images/plans-background.jpg");
   filter: grayscale(40);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   z-index: -1;
 }
@@ -15,7 +15,7 @@ main {
   background: #5cd480;
   border: 5px solid black;
   border-left: none;
-  margin: 16px 0;
+  margin: 1rem 0;
   width: 80%;
   position: relative;
 }
@@ -30,7 +30,7 @@ main {
   display: block;
   text-decoration: none;
   color: inherit;
-  padding: 32px;
+  padding: 2rem;
 }
 
 .package-title {
@@ -42,11 +42,11 @@ main {
   position: absolute;
   top: 0px;
   right: 0px;
-  margin: 20px;
-  font-size: 12px;
+  margin: 1.2rem;
+  font-size: 0.8rem;
   color: white;
   background: #ff5454;
-  padding: 8px;
+  padding: 0.5rem;
 }
 
 .package-subtitle {
@@ -56,7 +56,7 @@ main {
 .package-description {
   background: white;
   border: 1px solid #0e4f1f;
-  padding: 16px;
+  padding: 1rem;
   color: #0e4f1f;
 }
 
