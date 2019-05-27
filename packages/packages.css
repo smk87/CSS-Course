@@ -4,7 +4,6 @@ main {
 
 .background {
   background: url("../images/plans-background.jpg");
-  filter: grayscale(40);
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -40,8 +39,8 @@ main {
 
 .package__badge {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
   margin: 1.2rem;
   font-size: 0.8rem;
   color: white;
@@ -90,4 +89,26 @@ main {
 
 #premium .package-subtitle {
   color: #bbb;
+}
+
+@media (min-width: 40rem) {
+  main {
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .package {
+    border-left: 5px solid black;
+  }
+
+  #free {
+    border-right: 5px solid black;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right-color: #ff5454;
+  }
 }
