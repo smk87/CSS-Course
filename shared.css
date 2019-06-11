@@ -33,6 +33,8 @@ main {
 .backdrop {
   position: fixed;
   display: none;
+  opacity: 0;
+  transition: opacity 0.2s linear;
   top: 0;
   left: 0;
   z-index: 100;
@@ -113,6 +115,10 @@ main {
   color: #0e4f1f;
   font-weight: bold;
   padding: 0.2rem 0;
+}
+
+.main-nav__item--cta {
+  animation: wiggle 400ms 3s 8 ease-out none;
 }
 
 .main-nav__item--cta a,
@@ -229,6 +235,8 @@ main {
 
 .open {
   display: block !important;
+  opacity: 1 !important;
+  transform: translateY(0);
 }
 
 @media (min-width: 40rem) {
@@ -251,5 +259,19 @@ main {
     width: calc(100% - 122px);
     vertical-align: middle; */
     display: flex;
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  50% {
+    transform: rotateZ(-10deg);
+  }
+
+  100% {
+    transform: rotateZ(10deg);
   }
 }
